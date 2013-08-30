@@ -27,13 +27,11 @@ public abstract class GJK
    * <b>assert</b> - Polygon 'a' must not be null.<br>
    * <b>assert</b> - Polygon 'b' must not be null.
    *
-   * @param   <S> - Class extending {@link Polygon}
-   * @param   <T> - Class extending {@link Polygon}
    * @param   a - Polygon a.
    * @param   b - Polygon b.
    * @return  True if the two polygons are intersecting, false otherwise.
    */
-  public static < S extends Polygon, T extends Polygon > boolean intersects( final S a, final T b )
+  public static boolean intersects( final Polygon a, final Polygon b )
   {
     assert a != null;
     assert b != null;
